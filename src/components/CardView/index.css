@@ -1,0 +1,15 @@
+.cardview-container {
+  margin: 1em;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btns {
+  margin-bottom: 2em;
+  display: flex;
+  flex-wrap: wrap;
+}

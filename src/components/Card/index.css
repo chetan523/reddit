@@ -1,0 +1,41 @@
+:root {
+  --extraSpace: calc(2.6em + 2px);
+}
+
+.card-container {
+  width: calc(25% - var(--extraSpace));
+  margin: 0.5em 1em 1em 0em;
+  padding: 0.8em;
+  border-radius: 1em;
+  border: 1px solid #a8a8a850;
+  transition: all 0.2s ease-in-out;
+}
+
+.card-container:hover {
+  background-color: #2b2b2b;
+  color: white;
+  cursor: pointer;
+}
+
+.card-container .card-img {
+  width: 100%;
+  border-radius: 1em;
+}
+
+@media screen and (max-width: 1024px) {
+  .card-container {
+    width: calc(33.33% - var(--extraSpace));
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .card-container {
+    width: calc(50% - var(--extraSpace));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card-container {
+    width: calc(100% - var(--extraSpace));
+  }
+}
