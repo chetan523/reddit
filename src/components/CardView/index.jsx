@@ -8,7 +8,7 @@ export default function CardView() {
   const [redditData, setRedditData] = React.useState([]);
 
   React.useEffect(() => {
-    axios.get("http://www.reddit.com/r/pics/.json?jsonp=").then((res) => {
+    axios.get("https://www.reddit.com/r/pics/.json?jsonp=").then((res) => {
       setRedditData(res.data.data.children);
     });
   }, []);
